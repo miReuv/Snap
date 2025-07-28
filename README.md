@@ -1,4 +1,4 @@
-# Snap AI-Powered Image Captioning and Semantic Search Engine
+# AI-Powered Image Captioning and Semantic Search Engine
 
 An intelligent image search system that combines **custom AI image captioning** with **semantic vector search**. The system automatically generates detailed descriptions for images using InceptionV3 with attention mechanism, then enables natural language search using SentenceTransformer and FAISS vector similarity.
 
@@ -8,6 +8,7 @@ An intelligent image search system that combines **custom AI image captioning** 
 - **Semantic Search**: Search images using natural language (e.g., "sunset at the beach")
 - **Vector Similarity**: Fast, scalable search using FAISS indexing
 - **Real-time Processing**: Optimized for social media integration
+- **Demo Results**: Example outputs showcasing model accuracy (see `results/` folder)
 
 ## 🔍 How It Works
 
@@ -24,12 +25,16 @@ An intelligent image search system that combines **custom AI image captioning** 
 - **Data Processing**: Pandas, NumPy, OpenCV
 - **Backend Ready**: Designed for MongoDB integration
 
+## 🖼️ Demo Results
+
+See the `results/` folder for example outputs showing the AI model's captioning accuracy on various types of images. These demonstrate the system's ability to generate detailed, contextually relevant descriptions.
+
 ## 🚀 Quick Start
 
 ### 1. Setup Environment
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/mireuv/Snap.git
 cd your-repo
 
 # Create virtual environment
@@ -84,6 +89,7 @@ print(results)
 ├── functions.py           # Data processing utilities
 ├── requirements.txt       # Python dependencies
 ├── README.md             # Documentation
+├── results/              # Demo images showing model outputs (included)
 ├── flickr30k_images/*     # Image dataset (not included)
 ├── data.xlsx*            # Image descriptions (not included)
 ├── sentences.pt*          # Precomputed search data (generated)
